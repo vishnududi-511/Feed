@@ -8,6 +8,33 @@
     box-sizing: border-box;
 }
 
+:root {
+    --f-wieght-sm: 400;
+    --f-wieght-md: 500;
+    --f-wieght-lg: 600;
+    --f-wieght-xl: 700;
+    --f-wieght-xxl: 800;
+
+    --color-lgblue: #01C8FF;
+    --color-blue: #2C49FE;
+    --text-color-b: black;
+    --text-color-w: white;
+    --text-color-EAE: #EAEDFF;
+
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-26: 26px;
+    --font-size-30: 30px;
+    --font-size-36: 36px;
+    --font-size-38: 38px;
+    --font-size-42: 42px;
+    --font-size-48: 48px;
+}
+
 .container {
     max-width: 1320px;
     margin-right: auto;
@@ -82,35 +109,39 @@
     height: 100%;
 }
 
+.img-h-100 {
+    height: 100%;
+}
+
 .Events {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: var(--font-size-36);
+    font-weight: var(--f-wieght-xl);
     line-height: 49px;
     letter-spacing: 0em;
     text-align: left;
-    color: #2C49FE;
+    color: var(--color-blue);
 }
 
 .Free {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: var(--font-size-36);
+    font-weight: var(--f-wieght-xl);
     line-height: 49px;
     letter-spacing: 0em;
     text-align: left;
-    color: #01C8FF;
+    color: var(--color-lgblue);
 }
 
 .logout {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--f-wieght-lg);
     line-height: 24px;
-    color: #ffffff;
+    color: var(--text-color-w);
     letter-spacing: 0em;
     text-align: left;
-    background: #2C49FE;
+    background: var(--color-blue);
     padding: 11px 28px 11px 28px;
     border: none;
     border-radius: 23px;
@@ -119,16 +150,16 @@
 }
 
 .logout:hover {
-    background: white;
-    color: #2C49FE;
+    background: var(--text-color-w);
+    color: var(--color-blue);
 }
 
 .nav-fonts {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--font-size-16);
+    font-weight: var(--f-wieght-sm);
     line-height: 24px;
-    color: #000000;
+    color: var(--text-color-b);
 }
 
 nav {
@@ -136,7 +167,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 2;
-    background: white;
+    background: var(--text-color-w);
 }
 
 .cursor-p {
@@ -171,10 +202,10 @@ nav {
     gap: 60px;
 }
 
-h1 {
+.sec-1-heading {
     font-family: "Poppins", sans-serif;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: var(--font-size-48);
+    font-weight: var(--f-wieght-lg);
     line-height: 72px;
     letter-spacing: 0em;
     text-align: left;
@@ -183,8 +214,8 @@ h1 {
 
 .sec-1-font-1 {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--font-size-16);
+    font-weight: var(--f-wieght-sm);
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -194,8 +225,8 @@ h1 {
 
 .sec-1-font-2 {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: var(--font-size-16);
+    font-weight: var(--f-wieght-xl);
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -203,8 +234,8 @@ h1 {
 
 .sec-1-font-3 {
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: var(--font-size-12);
+    font-weight: var(--f-wieght-sm);
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
@@ -213,13 +244,13 @@ h1 {
 
 .no-font {
     font-family: "Poppins", sans-serif;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: var(--font-size-36);
+    font-weight: var(--f-wieght-lg);
     line-height: 54px;
     letter-spacing: 0em;
     text-align: center;
     opacity: 60%;
-    color: black;
+    color: var(--text-color-b);
 }
 
 .gap-13 {
@@ -242,7 +273,7 @@ h1 {
 }
 
 .box-2 {
-    background-color: #EAEDFF;
+    background-color: var(--text-color-EAE);
     border-radius: 20px;
     padding: 30px 30px;
 }
@@ -256,7 +287,7 @@ h1 {
     position: absolute;
     width: 203px;
     height: 8px;
-    background-color: #2C49FE;
+    background-color: var(--color-blue);
     right: 42px;
 }
 
@@ -265,15 +296,15 @@ h1 {
     position: absolute;
     width: 46px;
     height: 8px;
-    background-color: #01C8FF;
+    background-color: var(--color-lgblue);
     right: 43px;
     z-index: 1;
 }
 
 .new-posts {
     font-family: "Poppins", sans-serif;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: var(--font-size-48);
+    font-weight: var(--f-wieght-lg);
     line-height: 72px;
     letter-spacing: 0em;
     text-align: left;
@@ -281,8 +312,8 @@ h1 {
 
 .sec-2-font-1 {
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: var(--font-size-24);
+    font-weight: var(--f-wieght-lg);
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
@@ -290,8 +321,8 @@ h1 {
 
 .sec-2-font-2 {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--font-size-16);
+    font-weight: var(--f-wieght-sm);
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -311,12 +342,6 @@ h1 {
     border: 1px solid #9CA1BE;
     border-radius: 35px;
     padding: 7px;
-}
-
-button {
-    padding: 11px 28px 11px 28px;
-    max-width: 254px;
-    cursor: pointer;
 }
 
 .mt-45 {
@@ -347,8 +372,8 @@ button {
     gap: 40px;
 }
 
-.mt-33 {
-    margin-top: 33px;
+.mt-12 {
+    margin-top: 12%;
 }
 
 .gap-23 {
@@ -364,7 +389,7 @@ button {
 }
 
 .posi-box {
-    background: #FFFFFF;
+    background: var(--text-color-w);
     border-radius: 20px;
     width: 35%;
     height: 44%;
@@ -383,7 +408,7 @@ button {
     border: none;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: var(--f-wieght-sm);
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
@@ -393,28 +418,31 @@ button {
 }
 
 .post-cmnt {
-    background-color: #2C49FE;
+    background-color: var(--color-blue);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--f-wieght-lg);
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: var(--text-color-w);
     border-radius: 36px;
     width: max-content;
     border: 1px solid;
+    padding: 11px 28px 11px 28px;
+    max-width: 254px;
+    cursor: pointer;
 }
 
 .post-cmnt:hover {
-    background: white;
-    color: #2C49FE;
+    background: var(--text-color-w);
+    color: var(--color-blue);
 }
 
 .comment-font-1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--font-size-16);
+    font-weight: var(--f-wieght-md);
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -467,38 +495,38 @@ button {
 }
 
 .footer-bg {
-    background-color: #000000;
+    background-color: var(--text-color-b);
 }
 
 .footer-font-1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: var(--font-size-14);
+    font-weight: var(--f-wieght-sm);
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: var(--text-color-w);
     max-width: 340px;
 }
 
 .footer-font-2 {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: var(--f-wieght-xl);
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: var(--text-color-w);
 }
 
 .footer-font-3 {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--f-wieght-sm);
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-    color: white;
+    color: var(--text-color-w);
 }
 
 .pt-15 {
@@ -507,11 +535,11 @@ button {
 
 .footer-box {
     background: #2D3CAE87;
-    color: white;
+    color: var(--text-color-w);
     /* padding: 28px 0; */
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: var(--font-size-18);
+    font-weight: var(--f-wieght-xl);
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
@@ -534,8 +562,8 @@ button {
 
 .credits {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: var(--font-size-14);
+    font-weight: var(--f-wieght-sm);
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
@@ -573,6 +601,10 @@ button {
     margin-top: 15px;
 }
 
+.h-84 {
+    height: 84%;
+}
+
 .pt-37 {
     padding-top: 37px;
 }
@@ -592,11 +624,15 @@ button {
     .xl-mt-20 {
         margin-top: 20px;
     }
+
+    /* .img-h-100 {
+        height: 93%;
+    } */
 }
 
 @media (max-width:992px) {
     .lg-view {
-        background-color: white;
+        background-color: var(--text-color-w);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,7 +661,7 @@ button {
     label[for=menubar] span {
         width: 100%;
         height: 5px;
-        background-color: black;
+        background-color: var(--text-color-b);
 
     }
 
@@ -636,6 +672,10 @@ button {
     .lg-max-w-100 {
         max-width: 100%;
     }
+
+    /* .img-h-100 {
+        height: 93%;
+    } */
 
     .lg-justi-cont-flexstart {
         justify-content: flex-start;
@@ -700,17 +740,17 @@ button {
         position: absolute;
         width: 168px;
         height: 8px;
-        background-color: #2C49FE;
+        background-color: var(--color-blue);
         right: 43px;
     }
 
     .sec-2-font-1 {
-        font-size: 20px;
+        font-size: var(--font-size-20);
     }
 
     .new-posts {
         font-family: "Poppins", sans-serif;
-        font-size: 42px;
+        font-size: var(--font-size-42);
         font-weight: 600;
         line-height: 72px;
         letter-spacing: 0em;
@@ -718,13 +758,13 @@ button {
     }
 
     .input-1 {
-        font-size: 16px;
+        font-size: var(--font-size-16);
     }
 
-    h1 {
+    .sec-1-heading {
         font-family: "Poppins", sans-serif;
-        font-size: 38px;
-        font-weight: 600;
+        font-size: var(--font-size-38);
+        font-weight: var(--f-wieght-lg);
         line-height: 72px;
         letter-spacing: 0em;
         text-align: left;
@@ -747,12 +787,22 @@ button {
         padding-left: 12px;
     }
 
-    .mt-33 {
+    .mt-12 {
         margin-top: 0;
+    }
+
+    .h-84 {
+        height: unset;
     }
 
     .input-1 {
         font-size: 13px;
+    }
+
+    .card {
+        padding: 20px 5px;
+        box-shadow: 0px 8px 35px 0px #0000001A;
+        border-radius: 30px;
     }
 
     .post-cmnt {
@@ -768,21 +818,21 @@ button {
         position: absolute;
         width: 125px;
         height: 8px;
-        background-color: #2C49FE;
+        background-color: var(--color-blue);
         right: 65px;
     }
 
     .new-posts {
         font-family: "Poppins", sans-serif;
-        font-size: 38px;
-        font-weight: 600;
+        font-size: var(--font-size-38);
+        font-weight: var(--f-wieght-lg);
         line-height: 72px;
         letter-spacing: 0em;
         text-align: left;
     }
 
     .sec-2-font-1 {
-        font-size: 16px;
+        font-size: var(--font-size-16);
     }
 
     .py-80 {
@@ -797,7 +847,7 @@ button {
         height: 35px;
         width: 40px;
         position: absolute;
-        right: 4%;
+        right: 5%;
         top: 16%;
         display: flex;
         justify-content: space-evenly;
@@ -808,28 +858,28 @@ button {
 
     .Events {
         font-family: 'Poppins', sans-serif;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: var(--font-size-26);
+        font-weight: var(--f-wieght-xl);
         line-height: 49px;
         letter-spacing: 0em;
         text-align: left;
-        color: #2C49FE;
+        color: var(--color-blue);
     }
 
     .Free {
         font-family: 'Poppins', sans-serif;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: var(--font-size-26);
+        font-weight: var(--f-wieght-xl);
         line-height: 49px;
         letter-spacing: 0em;
         text-align: left;
-        color: #01C8FF;
+        color: var(--color-lgblue);
     }
 
-    h1 {
+    .sec-1-heading {
         font-family: "Poppins", sans-serif;
-        font-size: 30px;
-        font-weight: 600;
+        font-size: var(--font-size-30);
+        font-weight: var(--f-wieght-lg);
         line-height: 72px;
         letter-spacing: 0em;
         text-align: left;
